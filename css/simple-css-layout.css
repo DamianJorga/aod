@@ -1,0 +1,351 @@
+.container-fluid {
+    width: 100%;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.row {
+    width: 100%;
+    margin: 0 auto;
+}
+.row:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+/* empty column to make a gap in the row */
+.col-empty {
+    min-height: 0.1px;
+    visibility: hidden;
+}
+/* utilities to test layout */
+.col-mobile-10,
+.col-mobile-20,
+.col-mobile-30,
+.col-mobile-40,
+.col-mobile-50,
+.col-mobile-60,
+.col-mobile-70,
+.col-mobile-80,
+.col-mobile-90,
+.col-mobile-100,
+.col-mobile-land-10,
+.col-mobile-land-20,
+.col-mobile-land-30,
+.col-mobile-land-40,
+.col-mobile-land-50,
+.col-mobile-land-60,
+.col-mobile-land-70,
+.col-mobile-land-80,
+.col-mobile-land-90,
+.col-mobile-land-100,
+.col-mobile-land-10,
+.col-mobile-land-20,
+.col-mobile-land-30,
+.col-mobile-land-40,
+.col-mobile-land-50,
+.col-mobile-land-60,
+.col-mobile-land-70,
+.col-mobile-land-80,
+.col-mobile-land-90,
+.col-mobile-land-100,
+.col-tablet-10,
+.col-tablet-20,
+.col-tablet-30,
+.col-tablet-40,
+.col-tablet-50,
+.col-tablet-60,
+.col-tablet-70,
+.col-tablet-80,
+.col-tablet-90,
+.col-tablet-100,
+.col-large-tablet-10,
+.col-large-tablet-20,
+.col-large-tablet-30,
+.col-large-tablet-40,
+.col-large-tablet-50,
+.col-large-tablet-60,
+.col-large-tablet-70,
+.col-large-tablet-80,
+.col-large-tablet-90,
+.col-large-tablet-100,
+.col-desktop-10,
+.col-desktop-20,
+.col-desktop-30,
+.col-desktop-40,
+.col-desktop-50,
+.col-desktop-60,
+.col-desktop-70,
+.col-desktop-80,
+.col-desktop-90,
+.col-desktop-100 {
+    outline: 1px solid red;
+}
+/* we assume to use 10 columns layout */
+
+/* breakpoints */
+/* Small devices - mobile (up to 575px) */
+.col-mobile-10,
+.col-mobile-20,
+.col-mobile-30,
+.col-mobile-40,
+.col-mobile-50,
+.col-mobile-60,
+.col-mobile-70,
+.col-mobile-80,
+.col-mobile-90,
+.col-mobile-100 {
+    float: left;
+    min-height: 0.1px;  /**to avoid empty divs**/
+}
+.col-mobile-10 {
+    width: 10%;
+}
+.col-mobile-20 {
+    width: 20%;
+}
+.col-mobile-30 {
+    width: 30%;
+}
+.col-mobile-40 {
+    width: 40%;
+}
+.col-mobile-50 {
+    width: 50%;
+}
+.col-mobile-60 {
+    width: 60%;
+}
+.col-mobile-70 {
+    width: 70%;
+}
+.col-mobile-80 {
+    width: 80%;
+}
+.col-mobile-90 {
+    width: 90%;
+}
+.col-mobile-100 {
+    width: 100%;
+}
+@media (max-width: 575px) {
+    .col-mobile-hide {
+        display: none !important;  /*important clause to override all custom CSS*/
+    }
+}
+
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+    .col-mobile-land-10,
+    .col-mobile-land-20,
+    .col-mobile-land-30,
+    .col-mobile-land-40,
+    .col-mobile-land-50,
+    .col-mobile-land-60,
+    .col-mobile-land-70,
+    .col-mobile-land-80,
+    .col-mobile-land-90,
+    .col-mobile-land-100 {
+        float: left;
+        min-height: 0.1px;  /**to avoid empty divs**/
+    }
+    .col-mobile-land-10 {
+        width: 10%;
+    }
+    .col-mobile-land-20 {
+        width: 20%;
+    }
+    .col-mobile-land-30 {
+        width: 30%;
+    }
+    .col-mobile-land-40 {
+        width: 40%;
+    }
+    .col-mobile-land-50 {
+        width: 50%;
+    }
+    .col-mobile-land-60 {
+        width: 60%;
+    }
+    .col-mobile-land-70 {
+        width: 70%;
+    }
+    .col-mobile-land-80 {
+        width: 80%;
+    }
+    .col-mobile-land-90 {
+        width: 90%;
+    }
+    .col-mobile-land-100 {
+        width: 100%;
+    }
+}
+@media (min-width: 576px) 
+and (max-width: 767px) {
+    .col-mobile-land-hide {
+        display: none !important;  /*important clause to override all custom CSS*/
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .col-tablet-10,
+    .col-tablet-20,
+    .col-tablet-30,
+    .col-tablet-40,
+    .col-tablet-50,
+    .col-tablet-60,
+    .col-tablet-70,
+    .col-tablet-80,
+    .col-tablet-90,
+    .col-tablet-100 {
+        float: left;
+        min-height: 0.1px;  /**to avoid empty divs**/
+    }
+    .col-tablet-10 {
+        width: 10%;
+    }
+    .col-tablet-20 {
+        width: 20%;
+    }
+    .col-tablet-30 {
+        width: 30%;
+    }
+    .col-tablet-40 {
+        width: 40%;
+    }
+    .col-tablet-50 {
+        width: 50%;
+    }
+    .col-tablet-60 {
+        width: 60%;
+    }
+    .col-tablet-70 {
+        width: 70%;
+    }
+    .col-tablet-80 {
+        width: 80%;
+    }
+    .col-tablet-90 {
+        width: 90%;
+    }
+    .col-tablet-100 {
+        width: 100%;
+    }
+ }
+ @media (min-width: 768px)
+ and (max-width: 991px) {
+    .col-tablet-hide {
+        display: none !important;  /*important clause to override all custom CSS*/
+    }
+}
+
+
+ /* Large devices (large tablets, desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .col-large-tablet-10,
+    .col-large-tablet-20,
+    .col-large-tablet-30,
+    .col-large-tablet-40,
+    .col-large-tablet-50,
+    .col-large-tablet-60,
+    .col-large-tablet-70,
+    .col-large-tablet-80,
+    .col-large-tablet-90,
+    .col-large-tablet-100 {
+        float: left;
+        min-height: 0.1px;  /**to avoid empty divs**/
+    }
+    .col-large-tablet-10 {
+        width: 10%;
+    }
+    .col-large-tablet-20 {
+        width: 20%;
+    }
+    .col-large-tablet-30 {
+        width: 30%;
+    }
+    .col-large-tablet-40 {
+        width: 40%;
+    }
+    .col-large-tablet-50 {
+        width: 50%;
+    }
+    .col-large-tablet-60 {
+        width: 60%;
+    }
+    .col-large-tablet-70 {
+        width: 70%;
+    }
+    .col-large-tablet-80 {
+        width: 80%;
+    }
+    .col-large-tablet-90 {
+        width: 90%;
+    }
+    .col-large-tablet-100 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px)
+and (max-width: 1199px) {
+    .col-large-tablet-hide {
+        display: none !important;  /*important clause to override all custom CSS*/
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .col-desktop-10,
+    .col-desktop-20,
+    .col-desktop-30,
+    .col-desktop-40,
+    .col-desktop-50,
+    .col-desktop-60,
+    .col-desktop-70,
+    .col-desktop-80,
+    .col-desktop-90,
+    .col-desktop-100 {
+        float: left;
+        min-height: 0.1px;  /**to avoid empty divs**/
+    }
+    .col-desktop-10 {
+        width: 10%;
+    }
+    .col-desktop-20 {
+        width: 20%;
+    }
+    .col-desktop-30 {
+        width: 30%;
+    }
+    .col-desktop-40 {
+        width: 40%;
+    }
+    .col-desktop-50 {
+        width: 50%;
+    }
+    .col-desktop-60 {
+        width: 60%;
+    }
+    .col-desktop-70 {
+        width: 70%;
+    }
+    .col-desktop-80 {
+        width: 80%;
+    }
+    .col-desktop-90 {
+        width: 90%;
+    }
+    .col-desktop-100 {
+        width: 100%;
+    }
+    .col-desktop-hide {
+        display: none !important;  /*important clause to override all custom CSS*/
+    }
+}
