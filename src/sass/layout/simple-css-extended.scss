@@ -1,0 +1,19 @@
+// Base file: css\simple-css-layout.css 
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .col-tablet-33 {
+        width: 33.33%;
+    }
+}
+/* Large devices (large tablets, desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .col-large-tablet-33 {
+        width: 33.33%;
+    }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .col-desktop-33 {
+        width: 33.33%;
+    }
+}
