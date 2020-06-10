@@ -12,3 +12,35 @@
 @media (min-width: 1200px) {
   .col-desktop-33 {
     width: 33.33%; } }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+a,
+p {
+  font-family: "Roboto Slab", serif;
+  font-weight: normal; }
+
+header {
+  height: 100vh; }
+
+.nav {
+  background-image: url("../image/bg-nav-header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center; }
+  .nav-item {
+    margin-top: 10px; }
+  .nav-link {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase; }
