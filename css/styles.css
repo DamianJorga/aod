@@ -42,7 +42,7 @@ header {
     margin-top: 10px; }
   .nav-link {
     text-decoration: none;
-    color: #000;
+    color: #85868a;
     text-transform: uppercase;
     font-weight: bold; }
 
@@ -52,7 +52,7 @@ header {
   .nav-link,
   .float {
     float: left;
-    padding-left: 75px; }
+    padding-left: 45px; }
     .nav-link:before, .nav-link:after,
     .float:before,
     .float:after {
@@ -68,3 +68,38 @@ header {
     .nav-link,
     .float {
       *zoom: 1; } }
+
+@media (min-width: 768px) {
+  .nav-link,
+  .float {
+    padding-left: 70px; } }
+
+@media (min-width: 800px) {
+  .nav-link,
+  .float {
+    padding-left: 75px; } }
+
+@media (min-width: 731px) and (orientation: landscape) {
+  .nav-link,
+  .float {
+    padding-left: 60px; } }
+
+@media (min-width: 812px) and (orientation: landscape) {
+  .nav-link,
+  .float {
+    padding-left: 75px; } }
+
+@media (min-width: 992px) {
+  .nav-link,
+  .float {
+    padding-left: 115px; } }
+
+@media (min-width: 1200px) {
+  .nav-link,
+  .float {
+    font-size: 26px; } }
+
+@media (min-width: 1350px) {
+  .nav-link,
+  .float {
+    padding-left: 145px; } }
