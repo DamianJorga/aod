@@ -14,5 +14,19 @@ text-align: center;
     text-decoration: none;
     color: $color-second;
     text-transform: uppercase;
+    font-weight: bold;
+
+}
+}
+
+@media (min-width:640px) {
+    .nav-link {
+        padding-top: 30px;
+    }
+    .nav-link,
+    .float {
+        float: left;
+        @include clearFix;
+        padding-left: 75px;
 }
 }

@@ -43,4 +43,28 @@ header {
   .nav-link {
     text-decoration: none;
     color: #000;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-weight: bold; }
+
+@media (min-width: 640px) {
+  .nav-link {
+    padding-top: 30px; }
+  .nav-link,
+  .float {
+    float: left;
+    padding-left: 75px; }
+    .nav-link:before, .nav-link:after,
+    .float:before,
+    .float:after {
+      content: " ";
+      display: table; }
+    .nav-link:after,
+    .float:after {
+      display: block;
+      clear: both;
+      height: 1px;
+      margin-top: -1px;
+      visibility: hidden; }
+    .nav-link,
+    .float {
+      *zoom: 1; } }
