@@ -1,4 +1,11 @@
 // Base file: css\simple-css-layout.css 
+/* Mobile landscape 736px */
+@media (min-width: 736px) { 
+    .col-mobile-land-33 {
+        width: 33.33%;
+        float: left;
+    }
+}
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
     .col-tablet-33 {

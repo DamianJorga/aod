@@ -1,3 +1,9 @@
+/* Mobile landscape 736px */
+@media (min-width: 736px) {
+  .col-mobile-land-33 {
+    width: 33.33%;
+    float: left; } }
+
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .col-tablet-33 {
@@ -46,60 +52,11 @@ header {
     text-transform: uppercase;
     font-weight: bold; }
 
-@media (min-width: 640px) {
-  .nav-link {
-    padding-top: 30px; }
-  .nav-link,
-  .float {
-    float: left;
-    padding-left: 45px; }
-    .nav-link:before, .nav-link:after,
-    .float:before,
-    .float:after {
-      content: " ";
-      display: table; }
-    .nav-link:after,
-    .float:after {
-      display: block;
-      clear: both;
-      height: 1px;
-      margin-top: -1px;
-      visibility: hidden; }
-    .nav-link,
-    .float {
-      *zoom: 1; } }
-
 @media (min-width: 768px) {
-  .nav-link,
-  .float {
-    padding-left: 70px; } }
+  .nav-item {
+    font-size: 20px;
+    padding-top: 25px; } }
 
-@media (min-width: 800px) {
-  .nav-link,
-  .float {
-    padding-left: 75px; } }
-
-@media (min-width: 731px) and (orientation: landscape) {
-  .nav-link,
-  .float {
-    padding-left: 60px; } }
-
-@media (min-width: 812px) and (orientation: landscape) {
-  .nav-link,
-  .float {
-    padding-left: 75px; } }
-
-@media (min-width: 992px) {
-  .nav-link,
-  .float {
-    padding-left: 115px; } }
-
-@media (min-width: 1200px) {
-  .nav-link,
-  .float {
-    font-size: 26px; } }
-
-@media (min-width: 1350px) {
-  .nav-link,
-  .float {
-    padding-left: 145px; } }
+@media (min-width: 640px) and (orientation: landscape) {
+  .nav-item {
+    font-size: 19px; } }
