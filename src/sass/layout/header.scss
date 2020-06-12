@@ -1,33 +1,73 @@
-header {
-    height: 100vh;
+// navigation mobile 
+.topnav {
+    overflow: hidden;
+    position: relative;
+    background-image: url("../image/bg-nav-header.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    #myLinks {
+        display: none;
+      }
+        a {
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        text-transform: uppercase;
+            &.icon {
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 0;
+                font-size: 26px;
+            }
+      }
+  }
+
+  @media (min-width:768px) {
+      .topnav {
+          a {
+            font-size: 20px;
+              &.icon {
+                  font-size: 34px;
+              }
+          }
+      }
+  }
+  @media (min-width: 576px) and (orientation: landscape) {
+    .topnav {
+        a {
+          font-size: 18px;
+            &.icon {
+                font-size: 30px;
+            }
+        }
+    }
 }
+
+
+// navigation descktop
 .nav {
 background-image: url("../image/bg-nav-header.jpg");
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 text-align: center;
+padding-top: 20px ;
 &-item {
-    margin-top: 10px;
+    padding-top: 5px;
 }
 &-link {
     text-decoration: none;
     color: $color-third;
     text-transform: uppercase;
     font-weight: bold;
-
+    font-size: 34px;
 }
 }
 
-@media (min-width: 768px){
-    .nav-item{
-        font-size: 20px;
-        padding-top: 25px;
-}
-}
 
-@media (min-width: 640px) and (orientation:landscape){
-    .nav-item {
-        font-size: 19px;
-    }
-}
+

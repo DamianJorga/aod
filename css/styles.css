@@ -35,28 +35,54 @@ p {
   font-family: "Roboto Slab", serif;
   font-weight: normal; }
 
-header {
-  height: 100vh; }
+.topnav {
+  overflow: hidden;
+  position: relative;
+  background-image: url("../image/bg-nav-header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center; }
+  .topnav #myLinks {
+    display: none; }
+  .topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    text-transform: uppercase; }
+    .topnav a.icon {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 26px; }
+
+@media (min-width: 768px) {
+  .topnav a {
+    font-size: 20px; }
+    .topnav a.icon {
+      font-size: 34px; } }
+
+@media (min-width: 576px) and (orientation: landscape) {
+  .topnav a {
+    font-size: 18px; }
+    .topnav a.icon {
+      font-size: 30px; } }
 
 .nav {
   background-image: url("../image/bg-nav-header.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center; }
+  text-align: center;
+  padding-top: 20px; }
   .nav-item {
-    margin-top: 10px; }
+    padding-top: 5px; }
   .nav-link {
     text-decoration: none;
     color: #85868a;
     text-transform: uppercase;
-    font-weight: bold; }
-
-@media (min-width: 768px) {
-  .nav-item {
-    font-size: 20px;
-    padding-top: 25px; } }
-
-@media (min-width: 640px) and (orientation: landscape) {
-  .nav-item {
-    font-size: 19px; } }
+    font-weight: bold;
+    font-size: 34px; }

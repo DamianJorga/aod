@@ -6,41 +6,58 @@
     <title>AOD</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <!-- mobile navigation hamburger -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Layout -->
     <link rel="stylesheet" href="css/simple-css-layout.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
 <header class="container-fluid">
-    <div class="nav row">
+    <div class="nav row col-mobile-hide col-mobile-land-hide col-tablet-hide">
         <div class="col-mobile-100">
-            <img class=" col-tablet-hide  col-mobile-land-hide  col-large-tablet-hide col-desktop-hide"src="image/logo.png" alt="Logo AOD">
-            <ul class="nav-list col-mobile-land-33 col-tablet-40 col-desktop-33">
-                <li class="nav-item col-tablet-50">
-                    <a href="#" class="nav-link">about us</a>
-                </li>
-                <li class="nav-item col-tablet-50">
-                    <a href="#" class="nav-link">work</a>
-                </li>
-            </ul>
-            <div class="col-mobile-land-33 col-tablet-20 col-desktop-33">
-                <img class="col-mobile-hide" src="image/logo.png" alt="Logo AOD">
+            <img class="dis col-tablet-hide col-large-tablet-hide col-desktop-hide"src="image/logo.png" alt="Logo AOD">
+                <ul class="nav-list col-mobile-land-33 col-tablet-40 col-desktop-33">
+                    <li class="nav-item col-tablet-50">
+                        <a href="#anout-us" class="nav-link">about us</a>
+                    </li>
+                    <li class="nav-item col-tablet-50">
+                        <a href="#work" class="nav-link">work</a>
+                    </li>
+                </ul>
+                <div class="col-mobile-land-hide col-mobile-land-33 col-tablet-20 col-desktop-33">
+                    <img class="col-mobile-hide" src="image/logo.png" alt="">
+                </div>
+                <ul class="nav-list col-mobile-land-33 col-tablet-40 col-desktop-33">
+                    <li class="nav-item col-tablet-50">
+                        <a href="#shop" class="nav-link">shop</a>
+                    </li>
+                    <li class="nav-item col-tablet-50">
+                        <a href="#contact" class="nav-link">contact</a>
+                    </li>
+                </ul>
+        </div>
+    </div>
+    <!-- navigation hamburger -->
+    <div class="mobile-container col-large-tablet-hide col-desktop-hide">
+        <div class="topnav">
+            <a href="#home"><img src="image/logo.png" alt=""></a>
+            <div id="myLinks">
+                <a href="#about-us">about us</a>
+                <a href="#work">work</a>
+                <a href="#shop">shop</a>
+                <a href="#contact">contact</a>
             </div>
-            <ul class="nav-list col-mobile-land-33 col-tablet-40 col-desktop-33">
-                <li class="nav-item col-tablet-50">
-                    <a href="#" class="nav-link">shop</a>
-                </li>
-                <li class="nav-item col-tablet-50">
-                    <a href="#" class="nav-link">contact</a>
-                </li>
-            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
         </div>
     </div>
     <div class="header-bottom row">
         <div class="col-mobile-100">
             <img class="col-large-tablet-hide col-desktop-hide" src="image/mobile-header.jpg" alt="">
         </div>
-        <div class="col-mobile-hide col-desktop-100">
-            <img src="image/desktop-header.jpg" alt="">
+        <div class="col-mobile-hide col-mobile-land-hide col-tablet-hide col-desktop-100">
+            <img src="image/desktop-header.jpg" alt="Bike">
         </div>
     </div>
 </header>

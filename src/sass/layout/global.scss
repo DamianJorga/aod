@@ -1,9 +1,5 @@
-
-// font-family: 'Lato', sans-serif;
-// font-family: 'Roboto Slab', serif;
-
-$font-First: 'Lato', sans-serif;
-$font-Second: 'Roboto Slab', serif;
+$font-sans-serif: 'Lato', sans-serif;
+$font-serif: 'Roboto Slab', serif;
 
 // ###########
 // ###Color###
@@ -18,7 +14,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $font-First;
+    font-family: $font-sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -26,6 +22,6 @@ h6 {
 }
 a,
 p {
-    font-family: $font-Second;
+    font-family: $font-serif;
     font-weight: normal;
 }
