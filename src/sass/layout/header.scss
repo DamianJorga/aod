@@ -1,31 +1,34 @@
 // navigation mobile 
-.topnav {
+.mobile-nav {
     overflow: hidden;
     position: relative;
-    background-image: url("../image/bg-nav-header.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("../image/mobile-header-gradient.jpg");
+    background-position: left;
+    background-repeat: repeat-y;
+    border-bottom: 1px solid $color-light-gray;
     text-align: center;
-    #myLinks {
-        display: none;
-      }
         a {
-        color: black;
+        color: $color-dark-gray;
         padding: 14px 16px;
         text-decoration: none;
         font-size: 17px;
         display: block;
         text-transform: uppercase;
-            &.icon {
-                display: block;
-                position: absolute;
-                right: 0;
-                top: 0;
-                font-size: 26px;
-            }
+        letter-spacing: 2px;
       }
+      .icon {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+    }
   }
+ .menu-mobile {
+     display: none;
+ }
+ .opened {
+    display: block;
+}
 
   @media (min-width:768px) {
       .topnav {
@@ -37,7 +40,7 @@
           }
       }
   }
-  @media (min-width: 576px) and (orientation: landscape) {
+  @media (min-width: 576px){
     .topnav {
         a {
           font-size: 18px;
@@ -50,23 +53,31 @@
 
 
 // navigation descktop
+@media (min-width: 992px) {
 .nav {
 background-image: url("../image/bg-nav-header.jpg");
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 text-align: center;
-padding-top: 20px ;
+padding: 25px 95px;
 &-item {
-    padding-top: 5px;
+    padding: 25px 15px;
 }
 &-link {
     text-decoration: none;
-    color: $color-third;
+    color: $color-dark-gray;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 34px;
+    font-size: 17px;
+    letter-spacing: 2px;
 }
+}
+}
+@media (min-width: 1200px) {
+    .nav {
+        padding: 20px 230px;
+    }
 }
 
 

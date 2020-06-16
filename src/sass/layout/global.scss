@@ -1,12 +1,11 @@
-$font-sans-serif: 'Lato', sans-serif;
 $font-serif: 'Roboto Slab', serif;
+$font-sans-serif: 'Lato', sans-serif;
 
-// ###########
-// ###Color###
-// ###########
-$color-first: #f7f7f7;
-$color-second: #000;
-$color-third: #85868a;
+
+$color-light-gray: #f7f7f7;
+$color-gray: #85868a;
+$color-dark-gray: #4c4a55;
+$light-green: #58a289;
 
 h1,
 h2,
@@ -14,14 +13,14 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $font-sans-serif;
-    font-weight: bold;
+    font-family: $font-serif;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
 
 }
 a,
 p {
-    font-family: $font-serif;
-    font-weight: normal;
+    font-family: $font-sans-serif;
+    font-weight: 400;
 }
