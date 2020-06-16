@@ -1,1 +1,4 @@
-@import './layout/simple-css-extended.scss';
+@import 'mixins.scss';
+@import 'layout/simple-css-extended.scss';
+@import 'layout/global.scss';
+@import 'layout/header.scss';

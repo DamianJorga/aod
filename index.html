@@ -4,24 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AOD</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css" type="text/css">
     <!-- Layout -->
     <link rel="stylesheet" href="css/simple-css-layout.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
-<body>
-    <header class="container-fluid">
-        <div class="nav row">
-            <div class="col-mobile-100">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim recusandae nihil earum sapiente consectetur a iusto incidunt, illum debitis. Dolore officiis earum dolorem perferendis, sint nesciunt. Veniam architecto sunt id?</p>
+<header class="container-fluid">
+    <div class="nav row col-mobile-hide col-mobile-land-hide col-tablet-hide">
+        <div class="col-mobile-100">
+            <img class="dis col-tablet-hide col-large-tablet-hide col-desktop-hide"src="image/logo.png" alt="Logo AOD">
+                <ul class="nav-list col-mobile-land-33 col-tablet-40 col-desktop-33">
+                    <li class="nav-item col-tablet-50">
+                        <a href="#about-us" class="nav-link">about us</a>
+                    </li>
+                    <li class="nav-item col-tablet-50">
+                        <a href="#work" class="nav-link">work</a>
+                    </li>
+                </ul>
+                <div class="col-mobile-land-hide col-mobile-land-33 col-tablet-20 col-desktop-33">
+                    <img class="col-mobile-hide" src="image/logo.png" alt="">
+                </div>
+                <ul class="nav-list col-mobile-land-33 col-tablet-40 col-desktop-33">
+                    <li class="nav-item col-tablet-50">
+                        <a href="#shop" class="nav-link">shop</a>
+                    </li>
+                    <li class="nav-item col-tablet-50">
+                        <a href="#contact" class="nav-link">contact</a>
+                    </li>
+                </ul>
+        </div>
+    </div>
+    <!-- navigation hamburger -->
+    <div class="mobile-container col-large-tablet-hide col-desktop-hide">
+        <div class="mobile-nav">
+            <a href="#home"><img src="image/logo.png" alt=""></a>
+            <div class="menu-mobile">
+                <a href="#about-us">about us</a>
+                <a href="#work">work</a>
+                <a href="#shop">shop</a>
+                <a href="#contact">contact</a>
+            </div>
+            <div class="mobile-menu_button icon">
+                <img src="image/icons/icon-menu.png" alt="">
             </div>
         </div>
-        <div class="header-bottom row">
-            <div class="col-mobile-100">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim recusandae nihil earum sapiente consectetur a iusto incidunt, illum debitis. Dolore officiis earum dolorem perferendis, sint nesciunt. Veniam architecto sunt id?</p>
-            </div>
+    </div>
+    <div class="header-bottom row">
+        <div class="col-mobile-100">
+            <img class="col-large-tablet-hide col-desktop-hide" src="image/mobile-header.jpg" alt="">
         </div>
-    </header>
+        <div class="col-mobile-hide col-mobile-land-hide col-tablet-hide col-desktop-100">
+            <img src="image/desktop-header.jpg" alt="Bike">
+        </div>
+    </div>
+</header>
     <main class="container-fluid">
         <div class="top-text-banner row">
             <div class="col-mobile-100">

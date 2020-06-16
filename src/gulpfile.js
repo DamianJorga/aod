@@ -12,6 +12,6 @@ gulp.task('sass', function () {
 });
  
 gulp.task('watch', () => {
-  gulp.watch('sass/*.scss', gulp.series('sass'))
+  gulp.watch('sass/**/*.scss', gulp.series('sass'))
 });
 //task to minify js to /js 
