@@ -1,0 +1,64 @@
+.top-text-banner {
+    background-color: $color-light-gray;
+    padding: 30px 40px;
+    text-align: center;
+    h2 {
+        font-size: 18px;
+        padding: 10px 5px;
+    }
+    p {
+        padding: 20px 10px;
+    }
+}
+@media (min-width: 768px) { 
+    .top-text-banner {
+        padding: 20px 80px;
+    }
+}
+@media (min-width: 1200px) { 
+    .top-text-banner {
+        padding: 20px 215px;
+    }
+}
+.image_large {
+    position: relative;
+    height: auto;
+    .bicycle-position {
+        width: 20%;
+        position: absolute;
+        top: 30%;
+        left: 40%;
+    }
+}
+
+.description {
+    background-color: $color-light-gray;
+    text-align: center;
+    padding: 20px 0;
+    p {
+        text-align: left;
+        padding: 20px 30px;
+    }
+}
+.small-image {
+    img {
+        width:100%;
+    }
+}
+@media (min-width: 992px) { 
+    .description {
+        p {
+            padding: 15px 30px ;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .description {
+        p {
+            padding: 35px 30px ;
+        }
+    }
+}
+
+
+

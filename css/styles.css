@@ -19,6 +19,10 @@
   .col-desktop-33 {
     width: 33.33%; } }
 
+* {
+  max-width: 1500px;
+  margin: 0 auto; }
+
 h1,
 h2,
 h3,
@@ -96,3 +100,49 @@ p {
 @media (min-width: 1200px) {
   .nav {
     padding: 20px 230px; } }
+
+.top-text-banner {
+  background-color: #f7f7f7;
+  padding: 30px 40px;
+  text-align: center; }
+  .top-text-banner h2 {
+    font-size: 18px;
+    padding: 10px 5px; }
+  .top-text-banner p {
+    padding: 20px 10px; }
+
+@media (min-width: 768px) {
+  .top-text-banner {
+    padding: 20px 80px; } }
+
+@media (min-width: 1200px) {
+  .top-text-banner {
+    padding: 20px 215px; } }
+
+.image_large {
+  position: relative;
+  height: auto; }
+  .image_large .bicycle-position {
+    width: 20%;
+    position: absolute;
+    top: 30%;
+    left: 40%; }
+
+.description {
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 20px 0; }
+  .description p {
+    text-align: left;
+    padding: 20px 30px; }
+
+.small-image img {
+  width: 100%; }
+
+@media (min-width: 992px) {
+  .description p {
+    padding: 15px 30px; } }
+
+@media (min-width: 1200px) {
+  .description p {
+    padding: 35px 30px; } }
