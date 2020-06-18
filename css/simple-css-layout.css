@@ -81,7 +81,7 @@
 .col-desktop-80,
 .col-desktop-90,
 .col-desktop-100 {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 /* we assume to use 10 columns layout */
 

@@ -117,32 +117,52 @@ p {
 
 @media (min-width: 1200px) {
   .top-text-banner {
-    padding: 20px 215px; } }
+    padding: 50px 215px; } }
 
 .image_large {
   position: relative;
   height: auto; }
-  .image_large .bicycle-position {
-    width: 20%;
+  .image_large .icons-position {
+    width: 25%;
     position: absolute;
     top: 30%;
     left: 40%; }
 
+.three-columns {
+  text-align: center; }
+
+.position-bicycle-icon {
+  position: relative;
+  height: auto; }
+  .position-bicycle-icon .icons-bicycle {
+    width: 30%;
+    position: absolute;
+    top: 35%;
+    left: 30%; }
+
 .description {
-  background-color: #f7f7f7;
   text-align: center;
-  padding: 20px 0; }
+  padding: 20px 0 0 0; }
   .description p {
     text-align: left;
     padding: 20px 30px; }
-
-.small-image img {
-  width: 100%; }
 
 @media (min-width: 992px) {
   .description p {
     padding: 15px 30px; } }
 
 @media (min-width: 1200px) {
-  .description p {
-    padding: 35px 30px; } }
+  .min-image {
+    object-fit: cover;
+    min-height: 600px;
+    max-height: 600px; }
+  .description {
+    padding-top: 70px;
+    min-height: 600px;
+    max-height: 600px;
+    position: relative; }
+    .description .small-image {
+      min-height: 180px;
+      position: absolute;
+      bottom: 0;
+      left: 0; } }
