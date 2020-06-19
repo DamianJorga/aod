@@ -8,6 +8,7 @@
     }
     p {
         padding: 20px 10px;
+        color: $color-gray;
     }
 }
 @media (min-width: 768px) { 
@@ -24,8 +25,9 @@
 // 
 .image_large {
     position: relative;
-    height: auto;
-    .icons-position {
+    min-height: 600px;
+    max-height: 600px;
+    .icon-middle {
         width: 25%;
         position: absolute;
         top: 30%;
@@ -34,23 +36,20 @@
 }
 .three-columns {
     text-align: center;
-}
-.position-bicycle-icon {
-    position: relative;
-    height: auto;
-    .icons-bicycle {
-        width: 30%;
-        position: absolute;
+    .icon-middle {
+        width: 40%;
         top: 35%;
         left: 30%;
     }
 }
+
 .description {
     text-align: center;
     padding: 20px 0 0 0;
     p {
         text-align: left;
         padding: 20px 30px;
+        color: $color-gray;
     }
 
 }

@@ -14,6 +14,10 @@
   .col-large-tablet-33 {
     width: 33.33%; } }
 
+@media (min-width: 992px) {
+  .col-large-tablet-66 {
+    width: 66.67%; } }
+
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .col-desktop-33 {
@@ -109,7 +113,8 @@ p {
     font-size: 18px;
     padding: 10px 5px; }
   .top-text-banner p {
-    padding: 20px 10px; }
+    padding: 20px 10px;
+    color: #85868a; }
 
 @media (min-width: 768px) {
   .top-text-banner {
@@ -121,8 +126,9 @@ p {
 
 .image_large {
   position: relative;
-  height: auto; }
-  .image_large .icons-position {
+  min-height: 600px;
+  max-height: 600px; }
+  .image_large .icon-middle {
     width: 25%;
     position: absolute;
     top: 30%;
@@ -130,13 +136,8 @@ p {
 
 .three-columns {
   text-align: center; }
-
-.position-bicycle-icon {
-  position: relative;
-  height: auto; }
-  .position-bicycle-icon .icons-bicycle {
-    width: 30%;
-    position: absolute;
+  .three-columns .icon-middle {
+    width: 40%;
     top: 35%;
     left: 30%; }
 
@@ -145,7 +146,8 @@ p {
   padding: 20px 0 0 0; }
   .description p {
     text-align: left;
-    padding: 20px 30px; }
+    padding: 20px 30px;
+    color: #85868a; }
 
 @media (min-width: 992px) {
   .description p {

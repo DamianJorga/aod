@@ -1,5 +1,14 @@
 # Cele #
-* - napisac i ostylowac banner textowy mobile, maly tablet, duzy tablet, desktop// (DONE 20min)
-* - zrobic sekcje vintage oliva mobile, maly tablet// (DONE)
-* - zrobic sekcje vintage oliva duzy tablet, desktop// (NOT DONE)
-* - zrobic sekcje vintage oliva duzy tablet, desktop// (DONE)
+
+* poprawki usunać image/test.jpg(done), poprawic kolory w paragrafach(done),sprawdzic kod i usunac zbedne spacje.(done)  
+
+* zmienic nazwy ikon(done), sprawdzic CSS usunac powtarzajace sie klasy.(done)  
+
+* poprawic nazewnictwo klass(done), usunac przerwy miedzy sekcjami. 
+
+* poprawic grafike na malym tablecie i duzym.  
+
+   
+
+ 
+
