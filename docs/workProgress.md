@@ -4,7 +4,7 @@
 
 * zmienic nazwy ikon(done), sprawdzic CSS usunac powtarzajace sie klasy.(done)  
 
-* poprawic nazewnictwo klass(done), usunac przerwy miedzy sekcjami. 
+* poprawic nazewnictwo klass(done), usunac przerwy miedzy sekcjami.(done) 
 
 * poprawic grafike na malym tablecie i duzym.  
 
