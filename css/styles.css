@@ -125,9 +125,6 @@ p {
   .top-text-banner {
     padding: 50px 215px; } }
 
-main img {
-  padding: 10px 0 0 0; }
-
 .image_large {
   position: relative; }
   .image_large .icon-middle {
@@ -152,8 +149,6 @@ main img {
     color: #85868a; }
 
 @media (min-width: 992px) {
-  main img {
-    padding: 0; }
   .description p {
     padding: 15px 30px; }
   .image_large {

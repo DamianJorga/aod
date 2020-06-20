@@ -23,11 +23,7 @@
 }
 
 // 
-main {
-    img {
-        padding: 10px 0 0 0;
-    }
-}
+
 .image_large {
     position: relative;
 
@@ -60,11 +56,6 @@ main {
 }
 
 @media (min-width: 992px) { 
-    main {
-        img {
-            padding: 0;
-        }
-    }
     .description {
         p {
             padding: 15px 30px ;
