@@ -1,0 +1,129 @@
+.slider {
+    text-align: center;
+    padding: 20px 30px;
+    background-color: $color-light-gray;
+    h3 {
+        text-transform: none;
+        padding: 15px 30px;
+    }
+    p {
+        color: $color-gray;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+        color: $color-dark-gray;
+    }
+}
+@media (min-width: 992px) {
+    .slider {
+        p {
+            padding: 15px 60px;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .slider {
+        padding: 80px 60px;
+        p {
+            padding: 15px 150px;
+        }
+    }
+}
+.shop {
+    img{
+        width:100%;
+    }
+    .test {
+        min-height: 200px;
+        max-height: 200px;
+    }
+    .test-2 {
+        min-height: 1520px;
+        max-height: 1520px;
+    }
+    .test-3 {
+        min-height: 760px;
+        max-height: 760px;
+    }
+}
+.shop-now {
+    background-image: url("../image/shop6.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+
+    img,
+    p {   
+        display: block;
+        padding: 5px 0;
+        width: 25%;
+        margin: 0 auto;
+        color: #fff;
+        font-size: 14px;
+        text-shadow: 0 0 4px black;
+        background-color: rgba(88, 162, 137, 0.5);
+        text-align: center;
+        text-transform: uppercase;
+}
+}
+@media (min-width: 576px) {
+    .shop {
+        .test-2 {
+            min-height: 760px;
+            max-height: 760px;
+        }
+    }
+}
+@media (min-width: 992px) {
+    .shop {
+        .test-2 {
+            min-height: 370px;
+            max-height: 370px;
+        }
+        .test-3 {
+            min-height: 370px;
+            max-height: 370px;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .shop {
+        .test {
+            min-height: 250px;
+            max-height: 250px;
+        }
+        .test-3 {
+            min-height: 500px;
+            max-height: 500px;
+        }
+    }
+}
+
+.cta {
+    text-align: center;
+    background-color:#282f35 ;
+    a {
+        display: inline-block;
+        margin: 60px;
+        background-color: #282f35;
+        padding: 10px 50px;
+        color: #fff;
+        border: 1px solid #fff;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 12px;
+        transition: 0.5s;
+        text-decoration: none;
+    }
+}
+@media (min-width: 1200px) {
+    .cta {
+        a:hover {
+            background-color: #fff;
+            color: #282f35;
+        }
+    }
+}
+
+
