@@ -1,0 +1,106 @@
+.top-text-banner {
+    background-color: $color-light-gray;
+    padding: 30px 40px;
+    text-align: center;
+    h2 {
+        font-size: 18px;
+        padding: 10px 5px;
+    }
+    p {
+        padding: 20px 10px;
+        color: $color-gray;
+    }
+}
+@media (min-width: 768px) { 
+    .top-text-banner {
+        padding: 20px 80px;
+    }
+}
+@media (min-width: 1200px) { 
+    .top-text-banner {
+        padding: 50px 215px;
+    }
+}
+
+// 
+
+.image_large {
+    position: relative;
+
+    .icon-middle {
+        width: 25%;
+        position: absolute;
+        top: 30%;
+        left: 40%;
+    }
+}
+
+.three-columns {
+    text-align: center;
+    .icon-middle {
+        width: 40%;
+        top: 35%;
+        left: 30%;
+    }
+}
+
+.description {
+    text-align: center;
+    padding: 20px 0 0 0;
+    p {
+        text-align: left;
+        padding: 20px 30px;
+        color: $color-gray;
+    }
+
+}
+
+@media (min-width: 992px) { 
+    .description {
+        p {
+            padding: 15px 30px ;
+        }
+    }
+    .image_large {
+        min-height: 500px;
+        max-height: 500px;
+    }
+        .min-image {
+            object-fit: cover;
+            min-height: 500px;
+            max-height: 500px;
+        }
+        .description {
+            padding-top: 70px;
+            min-height: 500px;
+            max-height: 500px;
+            position: relative;
+            .small-image {
+                min-height: 180px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
+
+@media (min-width: 1200px) {
+.image_large {
+    min-height: 600px;
+    max-height: 600px;
+}
+    .min-image {
+        min-height: 600px;
+        max-height: 600px;
+    }
+    .description {
+        min-height: 600px;
+        max-height: 600px;
+        .small-image {
+            min-height: 180px;
+        }
+    }
+}
+
+
+

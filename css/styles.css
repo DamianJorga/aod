@@ -14,10 +14,19 @@
   .col-large-tablet-33 {
     width: 33.33%; } }
 
+@media (min-width: 992px) {
+  .col-large-tablet-66 {
+    width: 66.67%; } }
+
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .col-desktop-33 {
     width: 33.33%; } }
+
+header,
+main {
+  max-width: 1500px;
+  margin: 0 auto; }
 
 h1,
 h2,
@@ -96,3 +105,79 @@ p {
 @media (min-width: 1200px) {
   .nav {
     padding: 20px 230px; } }
+
+.top-text-banner {
+  background-color: #f7f7f7;
+  padding: 30px 40px;
+  text-align: center; }
+  .top-text-banner h2 {
+    font-size: 18px;
+    padding: 10px 5px; }
+  .top-text-banner p {
+    padding: 20px 10px;
+    color: #85868a; }
+
+@media (min-width: 768px) {
+  .top-text-banner {
+    padding: 20px 80px; } }
+
+@media (min-width: 1200px) {
+  .top-text-banner {
+    padding: 50px 215px; } }
+
+.image_large {
+  position: relative; }
+  .image_large .icon-middle {
+    width: 25%;
+    position: absolute;
+    top: 30%;
+    left: 40%; }
+
+.three-columns {
+  text-align: center; }
+  .three-columns .icon-middle {
+    width: 40%;
+    top: 35%;
+    left: 30%; }
+
+.description {
+  text-align: center;
+  padding: 20px 0 0 0; }
+  .description p {
+    text-align: left;
+    padding: 20px 30px;
+    color: #85868a; }
+
+@media (min-width: 992px) {
+  .description p {
+    padding: 15px 30px; }
+  .image_large {
+    min-height: 500px;
+    max-height: 500px; }
+  .min-image {
+    object-fit: cover;
+    min-height: 500px;
+    max-height: 500px; }
+  .description {
+    padding-top: 70px;
+    min-height: 500px;
+    max-height: 500px;
+    position: relative; }
+    .description .small-image {
+      min-height: 180px;
+      position: absolute;
+      bottom: 0;
+      left: 0; } }
+
+@media (min-width: 1200px) {
+  .image_large {
+    min-height: 600px;
+    max-height: 600px; }
+  .min-image {
+    min-height: 600px;
+    max-height: 600px; }
+  .description {
+    min-height: 600px;
+    max-height: 600px; }
+    .description .small-image {
+      min-height: 180px; } }

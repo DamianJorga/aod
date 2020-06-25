@@ -18,6 +18,11 @@
         width: 33.33%;
     }
 }
+@media (min-width: 992px) { 
+    .col-large-tablet-66 {
+        width: 66.67%;
+    }
+}
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
     .col-desktop-33 {
