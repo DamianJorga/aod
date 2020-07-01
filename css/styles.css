@@ -54,7 +54,7 @@ p {
   background-image: url("../image/mobile-header-gradient.jpg");
   background-position: left;
   background-repeat: repeat-y;
-  border-bottom: 1px solid #f7f7f7;
+  border-bottom: 4px solid #85868a;
   text-align: center; }
   .mobile-nav a {
     color: #4c4a55;
@@ -76,11 +76,26 @@ p {
 .opened {
   display: block; }
 
+.max {
+  min-height: 235px;
+  max-height: 235px; }
+  .max img {
+    width: 100%;
+    min-height: 235px;
+    max-height: 235px; }
+
 @media (min-width: 768px) {
   .topnav a {
     font-size: 20px; }
     .topnav a.icon {
-      font-size: 34px; } }
+      font-size: 34px; }
+  .max {
+    min-height: 400px;
+    max-height: 400px; }
+    .max img {
+      width: 100%;
+      min-height: 400px;
+      max-height: 400px; } }
 
 @media (min-width: 576px) {
   .topnav a {
@@ -104,11 +119,23 @@ p {
       text-transform: uppercase;
       font-weight: bold;
       font-size: 17px;
-      letter-spacing: 2px; } }
+      letter-spacing: 2px; }
+  .max {
+    min-height: 410px;
+    max-height: 410px; }
+    .max img {
+      min-height: 410px;
+      max-height: 410px; } }
 
 @media (min-width: 1200px) {
   .nav {
-    padding: 20px 230px; } }
+    padding: 20px 230px; }
+  .max {
+    min-height: 600px;
+    max-height: 600px; }
+    .max img {
+      min-height: 600px;
+      max-height: 600px; } }
 
 .slider {
   text-align: center;
@@ -154,8 +181,7 @@ p {
   background-repeat: no-repeat;
   background-size: 100%;
   text-align: center; }
-  .shop-now img,
-  .shop-now p {
+  .shop-now .item-shop {
     display: block;
     padding: 5px 0;
     width: 25%;
@@ -165,7 +191,8 @@ p {
     text-shadow: 0 0 4px black;
     background-color: rgba(88, 162, 137, 0.5);
     text-align: center;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-weight: 700; }
 
 @media (min-width: 576px) {
   .shop .test-2 {
@@ -177,8 +204,8 @@ p {
     min-height: 370px;
     max-height: 370px; }
   .shop .test-3 {
-    min-height: 370px;
-    max-height: 370px; } }
+    min-height: 400px;
+    max-height: 400px; } }
 
 @media (min-width: 1200px) {
   .shop .test {
