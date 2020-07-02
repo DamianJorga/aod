@@ -8,10 +8,16 @@ $font-serif: 'Roboto Slab', serif;
 $font-sans-serif: 'Lato', sans-serif;
 
 
+$color-black: #000;
+$color-white: #fff;
 $color-light-gray: #f7f7f7;
 $color-gray: #85868a;
 $color-dark-gray: #4c4a55;
 $color-light-green: #58a289;
+
+// ============================================
+// body do usuniecia po zakonczeniu sekcji main 
+// ============================================
 body {
     height: 300vh;
 }
@@ -28,6 +34,7 @@ h6 {
     letter-spacing: 1px;
 
 }
+
 a,
 p {
     font-family: $font-sans-serif;

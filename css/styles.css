@@ -76,10 +76,10 @@ p {
 .opened {
   display: block; }
 
-.max {
+.header-height {
   min-height: 235px;
   max-height: 235px; }
-  .max img {
+  .header-height img {
     width: 100%;
     min-height: 235px;
     max-height: 235px; }
@@ -89,10 +89,10 @@ p {
     font-size: 20px; }
     .topnav a.icon {
       font-size: 34px; }
-  .max {
+  .header-height {
     min-height: 400px;
     max-height: 400px; }
-    .max img {
+    .header-height img {
       width: 100%;
       min-height: 400px;
       max-height: 400px; } }
@@ -120,20 +120,20 @@ p {
       font-weight: bold;
       font-size: 17px;
       letter-spacing: 2px; }
-  .max {
+  .header-height {
     min-height: 410px;
     max-height: 410px; }
-    .max img {
+    .header-height img {
       min-height: 410px;
       max-height: 410px; } }
 
 @media (min-width: 1200px) {
   .nav {
     padding: 20px 230px; }
-  .max {
+  .header-height {
     min-height: 600px;
     max-height: 600px; }
-    .max img {
+    .header-height img {
       min-height: 600px;
       max-height: 600px; } }
 
@@ -148,11 +148,17 @@ p {
     color: #85868a; }
   .slider .slick-prev:before,
   .slider .slick-next:before {
-    color: #4c4a55; }
+    color: #4c4a55;
+    display: none; }
 
 @media (min-width: 992px) {
-  .slider p {
-    padding: 15px 60px; } }
+  .slider {
+    padding: 0 50px; }
+    .slider p {
+      padding: 15px 60px; }
+    .slider .slick-prev:before,
+    .slider .slick-next:before {
+      display: block; } }
 
 @media (min-width: 1200px) {
   .slider {
@@ -163,17 +169,20 @@ p {
 .shop img {
   width: 100%; }
 
-.shop .test {
+.shop .three-columns-height {
   min-height: 200px;
-  max-height: 200px; }
+  max-height: 200px;
+  object-fit: cover; }
 
-.shop .test-2 {
+.shop .three-columns--height {
   min-height: 1520px;
-  max-height: 1520px; }
+  max-height: 1520px;
+  object-fit: cover; }
 
-.shop .test-3 {
+.shop .three-columns---height {
   min-height: 760px;
-  max-height: 760px; }
+  max-height: 760px;
+  object-fit: cover; }
 
 .shop-now {
   background-image: url("../image/shop6.jpg");
@@ -188,30 +197,30 @@ p {
     margin: 0 auto;
     color: #fff;
     font-size: 14px;
-    text-shadow: 0 0 4px black;
+    text-shadow: 0 0 4px #000;
     background-color: rgba(88, 162, 137, 0.5);
     text-align: center;
     text-transform: uppercase;
     font-weight: 700; }
 
 @media (min-width: 576px) {
-  .shop .test-2 {
+  .shop .three-columns--height {
     min-height: 760px;
     max-height: 760px; } }
 
 @media (min-width: 992px) {
-  .shop .test-2 {
+  .shop .three-columns--height {
     min-height: 370px;
     max-height: 370px; }
-  .shop .test-3 {
+  .shop .three-columns---height {
     min-height: 400px;
     max-height: 400px; } }
 
 @media (min-width: 1200px) {
-  .shop .test {
+  .shop .three-columns-height {
     min-height: 250px;
     max-height: 250px; }
-  .shop .test-3 {
+  .shop .three-columns---height {
     min-height: 500px;
     max-height: 500px; } }
 
@@ -277,6 +286,13 @@ p {
     text-align: left;
     padding: 20px 30px;
     color: #85868a; }
+
+@media (min-width: 768px) {
+  main .min-image,
+  main .small-image {
+    width: 80%;
+    display: block;
+    margin: 0 auto; } }
 
 @media (min-width: 992px) {
   .description p {
