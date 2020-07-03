@@ -23,11 +23,6 @@
   .col-desktop-33 {
     width: 33.33%; } }
 
-header,
-main {
-  max-width: 1500px;
-  margin: 0 auto; }
-
 body {
   height: 300vh; }
 
@@ -45,7 +40,9 @@ h6 {
 a,
 p {
   font-family: "Lato", sans-serif;
-  font-weight: 400;
+  font-weight: 400; }
+
+a {
   text-decoration: none; }
 
 .mobile-nav {
@@ -76,10 +73,10 @@ p {
 .opened {
   display: block; }
 
-.header-height {
+.header-bottom--height {
   min-height: 235px;
   max-height: 235px; }
-  .header-height img {
+  .header-bottom--height img {
     width: 100%;
     min-height: 235px;
     max-height: 235px; }
@@ -89,10 +86,10 @@ p {
     font-size: 20px; }
     .topnav a.icon {
       font-size: 34px; }
-  .header-height {
+  .header-bottom--height {
     min-height: 400px;
     max-height: 400px; }
-    .header-height img {
+    .header-bottom--height img {
       width: 100%;
       min-height: 400px;
       max-height: 400px; } }
@@ -120,20 +117,20 @@ p {
       font-weight: bold;
       font-size: 17px;
       letter-spacing: 2px; }
-  .header-height {
+  .header-bottom--height {
     min-height: 410px;
     max-height: 410px; }
-    .header-height img {
+    .header-bottom--height img {
       min-height: 410px;
       max-height: 410px; } }
 
 @media (min-width: 1200px) {
   .nav {
     padding: 20px 230px; }
-  .header-height {
+  .header-bottom--height {
     min-height: 600px;
     max-height: 600px; }
-    .header-height img {
+    .header-bottom--height img {
       min-height: 600px;
       max-height: 600px; } }
 
@@ -153,7 +150,7 @@ p {
 
 @media (min-width: 992px) {
   .slider {
-    padding: 0 50px; }
+    padding: 50px 50px; }
     .slider p {
       padding: 15px 60px; }
     .slider .slick-prev:before,
@@ -287,14 +284,22 @@ p {
     padding: 20px 30px;
     color: #85868a; }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   main .min-image,
   main .small-image {
-    width: 80%;
+    width: 95%;
     display: block;
     margin: 0 auto; } }
 
 @media (min-width: 992px) {
+  .three-columns--height {
+    max-height: 500px;
+    min-height: 500px; }
+  main .min-image,
+  main .small-image {
+    width: 100%;
+    display: inline-block;
+    margin: 0 0; }
   .description p {
     padding: 15px 30px; }
   .image_large {

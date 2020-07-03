@@ -17,7 +17,7 @@
 }
 @media (min-width: 992px) {
     .slider {
-        padding: 0 50px;
+        padding: 50px 50px;
         p {
             padding: 15px 60px;
         }
@@ -193,11 +193,11 @@
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
     main {
         .min-image,
         .small-image {
-            width: 80%;
+            width: 95%;
             display: block;
             margin: 0 auto;
         }
@@ -205,6 +205,18 @@
 }
 
 @media (min-width: 992px) { 
+    .three-columns--height {
+        max-height: 500px;
+        min-height: 500px;
+    }
+    main {
+        .min-image,
+        .small-image {
+            width: 100%;
+            display: inline-block;
+            margin: 0 0;
+        }
+    }
     .description {
         p {
             padding: 15px 30px ;
