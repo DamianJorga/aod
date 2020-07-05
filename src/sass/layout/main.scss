@@ -39,77 +39,54 @@
     img{
         width:100%;
     }
-    .three-columns-height {
-        min-height: 200px;
-        max-height: 200px;
-        object-fit: cover;
-    }
-    .three-columns--height {
-        min-height: 1520px;
-        max-height: 1520px;
-        object-fit: cover;
-
-    }
-    .three-columns---height {
-        min-height: 760px;
-        max-height: 760px;
-        object-fit: cover;
-
-    }
 }
-.shop-now {
-    background-image: url("../image/shop6.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    text-align: center;
 
-    .item-shop{   
-        display: block;
-        padding: 5px 0;
-        width: 25%;
-        margin: 0 auto;
-        color: $color-white;
-        font-size: 14px;
-        text-shadow: 0 0 4px $color-black;
-        background-color: rgba(88, 162, 137, 0.5);
-        text-align: center;
-        text-transform: uppercase;
-        font-weight: 700;
-}
-}
+    .three-columns--outer {
+        max-height: 800px;
+        min-height: 800px;
+        .three-columns--inner {
+            div,
+            img{
+                max-height: 200px;
+                min-height: 200px;
+                object-fit: cover;
+            }
+        }
+    }
 @media (min-width: 576px) {
-    .shop {
-        .three-columns--height {
-            min-height: 760px;
-            max-height: 760px;
+    .three-columns--outer {
+        .three-columns--inner:nth-child(2) {
+            div,
+            img{
+                max-height: 450px;
+                min-height: 450px;
+            }
         }
     }
 }
 @media (min-width: 992px) {
-    .shop {
-        .three-columns--height {
-            min-height: 370px;
-            max-height: 370px;
-        }
-        .three-columns---height {
-            min-height: 400px;
-            max-height: 400px;
+    .three-columns--outer {
+        max-height: 400px;
+        min-height: 400px;
+        .three-columns--inner {
+            div,
+            img{
+                max-height: 250px;
+                min-height: 250px;
+            }
         }
     }
 }
-@media (min-width: 1200px) {
-    .shop {
-        .three-columns-height {
-            min-height: 250px;
-            max-height: 250px;
-        }
-        .three-columns---height {
-            min-height: 500px;
+.three-columns--outer {
+    .three-columns--inner:nth-child(2) {
+        div,
+        img{
             max-height: 500px;
+            min-height: 500px;
         }
     }
 }
+
 
 .cta {
     text-align: center;
