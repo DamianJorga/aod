@@ -1,0 +1,50 @@
+.footer-bottom {
+    text-align: center;
+    padding: 60px 0;
+    .footer--description {
+        color: $color-gray;
+        padding: 20px 0;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+}
+
+.mc-field-group {
+    padding: 15px 10px;
+}
+
+
+#mc-embedded-subscribe-form .mc_fieldset {
+    border: none;
+    min-height: 0px;
+    padding-bottom: 0px;
+}
+.error {
+    color: #F00;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px 0;
+}
+.asterisk {
+    color:#F00;
+    font-size: 18px;
+}
+.hidden {
+    display: none;
+}
+.email,
+.button {
+    padding: 15px 20px;
+    border: 1px solid $color-gray;
+    font-size: 16px;
+}
+.button {
+    background-color: $color-light-green;
+    border: 1px solid $color-light-green;
+}
+@media (min-width: 992px) {
+    .email,
+    .button {
+        padding: 15px 30px;
+    }
+ }
