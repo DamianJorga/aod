@@ -23,10 +23,8 @@
   .col-desktop-33 {
     width: 33.33%; } }
 
-header,
-main {
-  max-width: 1500px;
-  margin: 0 auto; }
+body {
+  height: 300vh; }
 
 h1,
 h2,
@@ -34,7 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto Slab", serif;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px; }
@@ -44,13 +42,16 @@ p {
   font-family: "Lato", sans-serif;
   font-weight: 400; }
 
+a {
+  text-decoration: none; }
+
 .mobile-nav {
   overflow: hidden;
   position: relative;
   background-image: url("../image/mobile-header-gradient.jpg");
   background-position: left;
   background-repeat: repeat-y;
-  border-bottom: 1px solid #f7f7f7;
+  border-bottom: 4px solid #85868a;
   text-align: center; }
   .mobile-nav a {
     color: #4c4a55;
@@ -72,11 +73,26 @@ p {
 .opened {
   display: block; }
 
+.header-bottom--height {
+  min-height: 235px;
+  max-height: 235px; }
+  .header-bottom--height img {
+    width: 100%;
+    min-height: 235px;
+    max-height: 235px; }
+
 @media (min-width: 768px) {
   .topnav a {
     font-size: 20px; }
     .topnav a.icon {
-      font-size: 34px; } }
+      font-size: 34px; }
+  .header-bottom--height {
+    min-height: 400px;
+    max-height: 400px; }
+    .header-bottom--height img {
+      width: 100%;
+      min-height: 400px;
+      max-height: 400px; } }
 
 @media (min-width: 576px) {
   .topnav a {
@@ -100,11 +116,105 @@ p {
       text-transform: uppercase;
       font-weight: bold;
       font-size: 17px;
-      letter-spacing: 2px; } }
+      letter-spacing: 2px; }
+  .header-bottom--height {
+    min-height: 410px;
+    max-height: 410px; }
+    .header-bottom--height img {
+      min-height: 410px;
+      max-height: 410px; } }
 
 @media (min-width: 1200px) {
   .nav {
-    padding: 20px 230px; } }
+    padding: 20px 230px; }
+  .header-bottom--height {
+    min-height: 600px;
+    max-height: 600px; }
+    .header-bottom--height img {
+      min-height: 600px;
+      max-height: 600px; } }
+
+.slider {
+  text-align: center;
+  padding: 20px 30px;
+  background-color: #f7f7f7; }
+  .slider h3 {
+    text-transform: none;
+    padding: 15px 30px; }
+  .slider p {
+    color: #85868a; }
+  .slider .slick-prev:before,
+  .slider .slick-next:before {
+    color: #4c4a55;
+    display: none; }
+
+@media (min-width: 992px) {
+  .slider {
+    padding: 50px 50px; }
+    .slider p {
+      padding: 15px 60px; }
+    .slider .slick-prev:before,
+    .slider .slick-next:before {
+      display: block; } }
+
+@media (min-width: 1200px) {
+  .slider {
+    padding: 80px 60px; }
+    .slider p {
+      padding: 15px 150px; } }
+
+.shop img {
+  width: 100%; }
+
+.three-columns--outer {
+  max-height: 800px;
+  min-height: 800px; }
+  .three-columns--outer .three-columns--inner div,
+  .three-columns--outer .three-columns--inner img {
+    max-height: 200px;
+    min-height: 200px;
+    object-fit: cover; }
+
+@media (min-width: 576px) {
+  .three-columns--outer .three-columns--inner:nth-child(2) div,
+  .three-columns--outer .three-columns--inner:nth-child(2) img {
+    max-height: 450px;
+    min-height: 450px; } }
+
+@media (min-width: 992px) {
+  .three-columns--outer {
+    max-height: 400px;
+    min-height: 400px; }
+    .three-columns--outer .three-columns--inner div,
+    .three-columns--outer .three-columns--inner img {
+      max-height: 250px;
+      min-height: 250px; } }
+
+.three-columns--outer .three-columns--inner:nth-child(2) div,
+.three-columns--outer .three-columns--inner:nth-child(2) img {
+  max-height: 500px;
+  min-height: 500px; }
+
+.cta {
+  text-align: center;
+  background-color: #282f35; }
+  .cta a {
+    display: inline-block;
+    margin: 60px;
+    background-color: #282f35;
+    padding: 10px 50px;
+    color: #fff;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    transition: 0.5s;
+    text-decoration: none; }
+
+@media (min-width: 1200px) {
+  .cta a:hover {
+    background-color: #fff;
+    color: #282f35; } }
 
 .top-text-banner {
   background-color: #f7f7f7;
@@ -148,7 +258,22 @@ p {
     padding: 20px 30px;
     color: #85868a; }
 
+@media (min-width: 576px) {
+  main .min-image,
+  main .small-image {
+    width: 95%;
+    display: block;
+    margin: 0 auto; } }
+
 @media (min-width: 992px) {
+  .three-columns--height {
+    max-height: 500px;
+    min-height: 500px; }
+  main .min-image,
+  main .small-image {
+    width: 100%;
+    display: inline-block;
+    margin: 0 0; }
   .description p {
     padding: 15px 30px; }
   .image_large {

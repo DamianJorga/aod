@@ -6,6 +6,9 @@
     <title>AOD</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <!-- SLICK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" type="text/css">
     <!-- Layout -->
     <link rel="stylesheet" href="css/simple-css-layout.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
@@ -51,10 +54,10 @@
         </div>
     </div>
     <div class="header-bottom row">
-        <div class="col-mobile-100">
-            <img class="col-large-tablet-hide col-desktop-hide" src="image/mobile-header.jpg" alt="">
+        <div class="header-bottom--height col-mobile-100 col-large-tablet-hide col-desktop-hide">
+            <img src="image/mobile-header.jpg" alt="">
         </div>
-        <div class="col-mobile-hide col-mobile-land-hide col-tablet-hide col-desktop-100">
+        <div class="header-bottom--height col-mobile-hide col-mobile-land-hide col-tablet-hide col-desktop-100">
             <img src="image/desktop-header.jpg" alt="Bike">
         </div>
     </div>
@@ -99,7 +102,7 @@
             <img class="icon-middle" src="image/icons/vintage-icon.png" alt="" >
             </div>
         </div>
-        <div class="three-columns row">
+        <div class="three-columns three-columns--height row">
             <div class="image_large col-mobile-hide col-mobile-land-hide col-mobile-100 col-large-tablet-33">
                 <img class="min-image " src="image/retro-bike-33-L.jpg" alt="">            
                 <img class="icon-middle "  src="image/icons/bicycle-sicon.png" alt="">
@@ -118,48 +121,59 @@
                 <img class="min-image" src="image/retro-bike-33-R.jpg" alt="">
             </div>
         </div>
-        <!-- TODO: implement slick slider -->
         <div class="slider row">
             <div class="col-mobile-100">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati perferendis quos ab quam quia? Vitae, ad facere veritatis expedita ducimus laudantium iste aut ipsa suscipit, ullam quasi eos voluptatem quia?</p>
+                <img src="image/icons/ikontweeter.png" alt="">
+                <h3>AOD New York @aod</h3>
+
+                <div class="slick">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores exercitationem doloribus dolor quibusdam fuga soluta velit impedit, praesentium, blanditiis illum alias placeat quae cumque quo saepe magnam pariatur? Fugit, reprehenderit?</p>
+                    </div>
+                    <div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio ullam voluptatem facere temporibus aperiam velit nihil, ipsa assumenda laboriosam voluptas nemo alias fugit, nulla doloremque natus impedit, nisi laborum sit.Similique repellat qui neque ratione laboriosam quisquam alias, adipisci magni minima labore expedita eos quod, deleniti itaque eum? Explicabo totam quis illum debitis maxime, quia repudiandae consectetur porro illo aspernatur.</p>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, nesciunt maxime. Vero dicta non reprehenderit optio assumenda itaque dignissimos sed mollitia iusto quibusdam, autem esse nostrum? Accusamus odit cumque eius.</p>
+                    </div>
+                </div>            
             </div>
         </div>
-        <!-- TODO: fix layout -->
-        <div class="three-columns shop row">
-            <div class="col-mobile-100 col-large-tablet-33">
-                <div class="col-mobile-100 col-large-tablet-50">
-                    <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati perferendis quos ab quam quia?</p>
+        <div class="three-columns--outer shop row">
+            <div class="three-columns--inner col-mobile-100 col-large-tablet-33">
+                <div class="col-mobile-50 col-large-tablet-50">
+                    <img src="image/shop1.jpg" alt="">                
                 </div>
-                <div class="col-mobile-100 col-large-tablet-50">
-                    <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati perferendis quos ab quam quia?</p>
+                <div class="col-mobile-50 col-large-tablet-50">
+                    <img src="image/shop2.jpg" alt="">                
                 </div>
                 <div class="col-mobile-100 col-large-tablet-100">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati perferendis quos ab quam quia? Vitae, ad facere veritatis expedita ducimus laudantium iste aut ipsa suscipit, ullam quasi eos voluptatem quia?</p>
+                    <img src="image/shop3.jpg" alt="">                
                 </div>
             </div>
-            <div class="col-mobile-100 col-large-tablet-33">
-                <div class="col-mobile-100 col-large-tablet-50">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptatem architecto et hic repellat aut molestias, incidunt officia possimus ducimus qui! Voluptas sint sunt eaque consectetur facere repellat, minus enim!</p>
+            <div class="three-columns--inner col-mobile-100 col-mobile-hide col-large-tablet-33">
+                <div class="col-mobile-100 col-mobile-land-50 col-large-tablet-50">
+                    <img src="image/shop4.jpg" alt="">                
                 </div>
-                <div class="col-mobile-100 col-large-tablet-50">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptatem architecto et hic repellat aut molestias, incidunt officia possimus ducimus qui! Voluptas sint sunt eaque consectetur facere repellat, minus enim!</p>
+                <div class="col-mobile-100 col-mobile-land-50 col-large-tablet-50">
+                    <img src="image/shop5.jpg" alt="">
                 </div>
             </div>
-            <div class="col-mobile-100 col-large-tablet-33">
+            <div class="three-columns--inner col-mobile-100 col-large-tablet-33">
                 <div class="col-mobile-100 col-large-tablet-100">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto minus sunt, soluta facere, quidem deleniti possimus repellat ab id doloremque illum voluptas? Nemo, nulla. Laborum doloribus earum maxime. Voluptatum, ipsum!</p>
+                    <img src="image/shop6.jpg" alt="">
                 </div>
-                <div class="col-mobile-100 col-large-tablet-50">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto minus sunt, soluta facere, quidem deleniti possimus</p>
+                <div class="col-mobile-50 col-large-tablet-50">
+                    <img src="image/shop7.jpg" alt="">                
                 </div>
-                <div class="col-mobile-100 col-large-tablet-50">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto minus sunt, soluta facere, quidem deleniti possimus</p>
+                <div class="col-mobile-50 col-large-tablet-50">
+                    <img src="image/shop8.jpg" alt="">                
                 </div>
             </div>
         </div>
         <div class="cta row">
             <div class="col-mobile-100">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati perferendis quos ab quam quia? Vitae, ad facere veritatis expedita ducimus laudantium iste aut ipsa suscipit, ullam quasi eos voluptatem quia?</p>
+                <a href="#">discover the shop</a>
             </div>
         </div>
     </main>
@@ -186,6 +200,12 @@
             </div>
         </div>
     </footer>
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    
+
     <script src="scripts/main.js"></script>
 </body>
 </html>

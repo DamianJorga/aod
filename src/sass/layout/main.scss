@@ -1,3 +1,118 @@
+.slider {
+    text-align: center;
+    padding: 20px 30px;
+    background-color: $color-light-gray;
+    h3 {
+        text-transform: none;
+        padding: 15px 30px;
+    }
+    p {
+        color: $color-gray;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+        color: $color-dark-gray;
+        display: none;
+    }
+}
+@media (min-width: 992px) {
+    .slider {
+        padding: 50px 50px;
+        p {
+            padding: 15px 60px;
+        }
+        .slick-prev:before,
+        .slick-next:before {
+            display: block;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .slider {
+        padding: 80px 60px;
+        p {
+            padding: 15px 150px;
+        }
+    }
+}
+.shop {
+    img{
+        width:100%;
+    }
+}
+
+    .three-columns--outer {
+        max-height: 800px;
+        min-height: 800px;
+        .three-columns--inner {
+            div,
+            img{
+                max-height: 200px;
+                min-height: 200px;
+                object-fit: cover;
+            }
+        }
+    }
+@media (min-width: 576px) {
+    .three-columns--outer {
+        .three-columns--inner:nth-child(2) {
+            div,
+            img{
+                max-height: 450px;
+                min-height: 450px;
+            }
+        }
+    }
+}
+@media (min-width: 992px) {
+    .three-columns--outer {
+        max-height: 400px;
+        min-height: 400px;
+        .three-columns--inner {
+            div,
+            img{
+                max-height: 250px;
+                min-height: 250px;
+            }
+        }
+    }
+}
+.three-columns--outer {
+    .three-columns--inner:nth-child(2) {
+        div,
+        img{
+            max-height: 500px;
+            min-height: 500px;
+        }
+    }
+}
+
+
+.cta {
+    text-align: center;
+    background-color:#282f35 ;
+    a {
+        display: inline-block;
+        margin: 60px;
+        background-color: #282f35;
+        padding: 10px 50px;
+        color: $color-white;
+        border: 1px solid $color-white;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 12px;
+        transition: 0.5s;
+        text-decoration: none;
+    }
+}
+@media (min-width: 1200px) {
+    .cta {
+        a:hover {
+            background-color: $color-white;
+            color: #282f35;
+        }
+    }
+}
 .top-text-banner {
     background-color: $color-light-gray;
     padding: 30px 40px;
@@ -55,7 +170,30 @@
 
 }
 
+@media (min-width: 576px) {
+    main {
+        .min-image,
+        .small-image {
+            width: 95%;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
 @media (min-width: 992px) { 
+    .three-columns--height {
+        max-height: 500px;
+        min-height: 500px;
+    }
+    main {
+        .min-image,
+        .small-image {
+            width: 100%;
+            display: inline-block;
+            margin: 0 0;
+        }
+    }
     .description {
         p {
             padding: 15px 30px ;
@@ -65,30 +203,30 @@
         min-height: 500px;
         max-height: 500px;
     }
-        .min-image {
-            object-fit: cover;
-            min-height: 500px;
-            max-height: 500px;
-        }
-        .description {
-            padding-top: 70px;
-            min-height: 500px;
-            max-height: 500px;
-            position: relative;
-            .small-image {
-                min-height: 180px;
-                position: absolute;
-                bottom: 0;
-                left: 0;
-            }
+    .min-image {
+        object-fit: cover;
+        min-height: 500px;
+        max-height: 500px;
+    }
+    .description {
+        padding-top: 70px;
+        min-height: 500px;
+        max-height: 500px;
+        position: relative;
+        .small-image {
+            min-height: 180px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
         }
     }
+}
 
 @media (min-width: 1200px) {
-.image_large {
-    min-height: 600px;
-    max-height: 600px;
-}
+    .image_large {
+        min-height: 600px;
+        max-height: 600px;
+    }
     .min-image {
         min-height: 600px;
         max-height: 600px;
@@ -101,6 +239,6 @@
         }
     }
 }
-
-
-
+// ==========================
+// Nowa sekcja
+// ==========================

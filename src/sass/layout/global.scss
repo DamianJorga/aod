@@ -1,17 +1,20 @@
-header,
-main {
-    max-width: 1500px;
-    margin: 0 auto;
-}
-
 $font-serif: 'Roboto Slab', serif;
 $font-sans-serif: 'Lato', sans-serif;
 
 
+$color-black: #000;
+$color-white: #fff;
 $color-light-gray: #f7f7f7;
 $color-gray: #85868a;
 $color-dark-gray: #4c4a55;
-$light-green: #58a289;
+$color-light-green: #58a289;
+
+// ============================================
+// TODO: body do usuniecia po zakonczeniu sekcji main 
+// ============================================
+body {
+    height: 300vh;
+}
 
 h1,
 h2,
@@ -19,14 +22,18 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $font-serif;
+    font-family: $font-sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
 
 }
+
 a,
 p {
     font-family: $font-sans-serif;
     font-weight: 400;
+}
+a {
+    text-decoration: none;
 }
