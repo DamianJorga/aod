@@ -1,14 +1,3 @@
-.footer-bottom {
-    text-align: center;
-    padding: 60px 0;
-    .footer--description {
-        color: $color-gray;
-        padding: 20px 0;
-        font-size: 20px;
-        letter-spacing: 1px;
-    }
-}
-
 .mc-field-group {
     padding: 15px 10px;
 }
@@ -31,21 +20,39 @@
 }
 .hidden {
     display: none;
+}.av-checkbox {
+    margin-right: 10px;
 }
+
+
 .email,
 .button {
-    padding: 15px 20px;
+    padding: 15px 45px;
     border: 1px solid $color-gray;
     font-size: 16px;
+    font-family: $font-sans-serif;
+}
+span {
+    padding: 0 10px 0 0;
+    font-family: $font-sans-serif;
 }
 .button {
     background-color: $color-light-green;
     border: 1px solid $color-light-green;
     color: $color-white;
+    padding: 15px 30px;
 }
-@media (min-width: 992px) {
-    .email,
-    .button {
-        padding: 15px 30px;
+
+@media (min-width: 576px) { 
+    .email {
+        padding: 15px 50px;
+    }
+    .button { 
+        padding: 15px 45px;
+    }
+    .mc_fieldset { 
+        max-width: 410px;
+        margin: 0 auto;
     }
  }
+
