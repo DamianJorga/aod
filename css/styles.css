@@ -351,7 +351,7 @@ a {
     padding: 15px 30px; } }
 
 .mc-field-group {
-  padding: 15px 10px; }
+  padding: 5px 10px; }
 
 #mc-embedded-subscribe-form .mc_fieldset {
   border: none;
@@ -393,9 +393,9 @@ span {
 
 @media (min-width: 576px) {
   .email {
-    padding: 15px 50px; }
+    padding: 10px 50px; }
   .button {
-    padding: 15px 45px; }
+    padding: 10px 45px; }
   .mc_fieldset {
     max-width: 410px;
     margin: 0 auto; } }
