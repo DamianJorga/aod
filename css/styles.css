@@ -306,7 +306,7 @@ a {
 
 .footer-bottom {
   text-align: center;
-  padding: 60px 0 0 0; }
+  padding: 60px 0 0; }
   .footer-bottom .footer--description {
     color: #85868a;
     padding: 20px 0;
@@ -317,7 +317,7 @@ a {
   background-color: #f7f7f7;
   color: #85868a;
   text-align: left;
-  padding: 80px 0 0 20px; }
+  padding: 80px 0 80px 20px; }
   .footer-bottom--col2 h4 {
     text-transform: none;
     font-size: 16px; }
@@ -328,12 +328,10 @@ a {
     max-height: 48px;
     margin: 15px 5px;
     opacity: .7; }
-  .footer-bottom--col2 .oblique {
-    text-align: center; }
-    .footer-bottom--col2 .oblique p {
-      font-style: italic;
-      padding: 0 0 40px 0;
-      display: inline-block; }
+  .footer-bottom--col2 .oblique p {
+    font-style: italic;
+    padding: 0 0 40px 0;
+    display: inline-block; }
 
 @media (min-width: 768px) {
   .footer-bottom--col2 h4 {
@@ -345,7 +343,7 @@ a {
     max-height: 54px;
     min-height: 54px; }
   .footer-bottom--col2 .oblique {
-    margin-top: 20px 0;
+    padding-top: 40px;
     font-size: 18px;
     text-align: center; } }
 
@@ -353,15 +351,24 @@ a {
   .footer-bottom--col2 .social-media img {
     padding-left: 45px; }
   .footer-bottom--col2 .oblique {
-    margin-top: 0; } }
+    padding-top: 0;
+    position: relative; }
+    .footer-bottom--col2 .oblique img {
+      position: absolute;
+      bottom: 35%;
+      right: 15%; } }
 
 @media (min-width: 1200px) {
   .footer-bottom--col2 {
-    padding: 150px; }
-    .footer-bottom--col2 .footer-bottom--col2 h4 {
+    padding: 100px 150px;
+    margin-top: 75px; }
+    .footer-bottom--col2 h4 {
       font-size: 16px; }
-    .footer-bottom--col2 .footer-bottom--col2 p {
-      font-size: 14px; } }
+    .footer-bottom--col2 p {
+      font-size: 14px; }
+    .footer-bottom--col2 .oblique img {
+      right: 15%;
+      bottom: 30%; } }
 
 .mc-field-group {
   padding: 5px 10px; }
