@@ -11,8 +11,7 @@
 .footer-bottom--col2 {
     background-color: $color-light-gray;
     color: $color-gray;
-    text-align: left;
-    padding: 80px 0 80px 20px;
+    padding: 50px 0 35px;
     h4 {
         text-transform: none;
         font-size: 16px;
@@ -22,6 +21,7 @@
         font-size: 14px;
     }
     .social-media {
+        padding-top: 20px;
         img {
         min-height: 48px;
         max-height: 48px;
@@ -35,7 +35,26 @@
         padding: 0 0 40px 0;
         display: inline-block;
         }
+        img {
+            position: relative;
+            top:20px;
+            left: 5px;
+        }
     }
+}
+@media (min-width: 576px) { 
+    .footer-bottom--col2 {
+        h4{ padding-top: 10px;}
+        h4,
+        p {
+            text-align: left;
+            margin-left: 30px;
+        }
+        .social-media {
+            padding: 0;
+        }
+    }
+
 }
 @media (min-width: 768px) { 
 .footer-bottom--col2 { 
@@ -46,8 +65,13 @@
     p {
         font-size: 16px;
     }
+    h4,
+    p {
+        text-align: left;
+        padding-left: 30px;
+        margin: 0;
+    }
     .social-media {
-        padding: 0 10px 0 0;
         max-height: 54px;
         min-height: 54px;
     }
@@ -61,18 +85,14 @@
 @media (min-width: 992px) { 
     .footer-bottom--col2 { 
         .social-media {
+            // text-align: center;
             img {
-                padding-left: 45px;
+                padding-left: 20px;
+                text-align: center;
             }
         }
         .oblique {
             padding-top: 0;
-            position: relative;
-            img {
-                position: absolute;
-                bottom: 35%;
-                right: 15%;
-            }
         }
 }
 }
@@ -86,12 +106,6 @@
             }
             p {
                 font-size: 14px;
-            }
-            .oblique {
-                img {
-                    right: 15%;
-                    bottom: 30%;
-                }
             }
 }
 }

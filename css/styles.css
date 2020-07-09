@@ -316,30 +316,49 @@ a {
 .footer-bottom--col2 {
   background-color: #f7f7f7;
   color: #85868a;
-  text-align: left;
-  padding: 80px 0 80px 20px; }
+  padding: 50px 0 35px; }
   .footer-bottom--col2 h4 {
     text-transform: none;
     font-size: 16px; }
   .footer-bottom--col2 p {
     font-size: 14px; }
-  .footer-bottom--col2 .social-media img {
-    min-height: 48px;
-    max-height: 48px;
-    margin: 15px 5px;
-    opacity: .7; }
+  .footer-bottom--col2 .social-media {
+    padding-top: 20px; }
+    .footer-bottom--col2 .social-media img {
+      min-height: 48px;
+      max-height: 48px;
+      margin: 15px 5px;
+      opacity: .7; }
   .footer-bottom--col2 .oblique p {
     font-style: italic;
     padding: 0 0 40px 0;
     display: inline-block; }
+  .footer-bottom--col2 .oblique img {
+    position: relative;
+    top: 20px;
+    left: 5px; }
+
+@media (min-width: 576px) {
+  .footer-bottom--col2 h4 {
+    padding-top: 10px; }
+  .footer-bottom--col2 h4,
+  .footer-bottom--col2 p {
+    text-align: left;
+    margin-left: 30px; }
+  .footer-bottom--col2 .social-media {
+    padding: 0; } }
 
 @media (min-width: 768px) {
   .footer-bottom--col2 h4 {
     font-size: 20px; }
   .footer-bottom--col2 p {
     font-size: 16px; }
+  .footer-bottom--col2 h4,
+  .footer-bottom--col2 p {
+    text-align: left;
+    padding-left: 30px;
+    margin: 0; }
   .footer-bottom--col2 .social-media {
-    padding: 0 10px 0 0;
     max-height: 54px;
     min-height: 54px; }
   .footer-bottom--col2 .oblique {
@@ -349,14 +368,10 @@ a {
 
 @media (min-width: 992px) {
   .footer-bottom--col2 .social-media img {
-    padding-left: 45px; }
+    padding-left: 20px;
+    text-align: center; }
   .footer-bottom--col2 .oblique {
-    padding-top: 0;
-    position: relative; }
-    .footer-bottom--col2 .oblique img {
-      position: absolute;
-      bottom: 35%;
-      right: 15%; } }
+    padding-top: 0; } }
 
 @media (min-width: 1200px) {
   .footer-bottom--col2 {
@@ -365,18 +380,15 @@ a {
     .footer-bottom--col2 h4 {
       font-size: 16px; }
     .footer-bottom--col2 p {
-      font-size: 14px; }
-    .footer-bottom--col2 .oblique img {
-      right: 15%;
-      bottom: 30%; } }
+      font-size: 14px; } }
 
 .mc-field-group {
-  padding: 5px 10px; }
+  padding: 5px 0; }
 
 #mc-embedded-subscribe-form .mc_fieldset {
   border: none;
   min-height: 0px;
-  padding-bottom: 0px; }
+  padding: 0 10px 20px; }
 
 .error {
   color: #F00;
@@ -402,7 +414,6 @@ a {
   font-family: "Lato", sans-serif; }
 
 span {
-  padding: 0 10px 0 0;
   font-family: "Lato", sans-serif;
   color: #85868a; }
 

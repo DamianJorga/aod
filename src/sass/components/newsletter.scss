@@ -1,12 +1,12 @@
 .mc-field-group {
-    padding: 5px 10px;
+    padding: 5px 0;
 }
 
 
 #mc-embedded-subscribe-form .mc_fieldset {
     border: none;
     min-height: 0px;
-    padding-bottom: 0px;
+    padding:0 10px 20px;
 }
 .error {
     color: #F00;
@@ -33,7 +33,6 @@
     font-family: $font-sans-serif;
 }
 span {
-    padding: 0 10px 0 0;
     font-family: $font-sans-serif;
     color: $color-gray;
 }
