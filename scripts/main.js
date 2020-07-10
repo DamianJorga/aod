@@ -6,7 +6,6 @@ const mobileLinks = document.querySelector(".menu-mobile");
 mobileLinks.classList.toggle("opened");
 }
 
-
 $(document).ready(() => {
     $('.slick') .slick({
       autoplay: true,
@@ -14,3 +13,18 @@ $(document).ready(() => {
       dots: true,
     });
   });
+
+$(function(){
+ 
+	$(window).scroll(function() {
+		if ($(window).scrollTop() > 100) {
+			$('.scrollTopButton').addClass('show');
+		} else {
+			$('.scrollTopButton').removeClass('show');
+		}
+	});
+ 
+	$('.scrollTopButton').click(function() {
+		$('body').animate({scrollTop: 0}, 400, 'linear');
+	});
+});
