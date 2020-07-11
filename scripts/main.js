@@ -25,6 +25,6 @@ $(function(){
 	});
  
 	$('.scrollTopButton').click(function() {
-		$('body').animate({scrollTop: 0}, 400, 'linear');
+		$('html').animate({scrollTop: 0}, 400, 'linear');
 	});
 });
