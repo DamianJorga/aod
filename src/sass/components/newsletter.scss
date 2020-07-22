@@ -32,9 +32,11 @@
     font-size: 16px;
     font-family: $font-sans-serif;
 }
-span {
-    font-family: $font-sans-serif;
-    color: $color-gray;
+.footer-bottom {
+    span {
+        font-family: $font-sans-serif;
+        color: $color-gray;
+    }
 }
 .button {
     background-color: $color-light-green;

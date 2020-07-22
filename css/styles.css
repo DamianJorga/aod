@@ -42,6 +42,24 @@ p {
 a {
   text-decoration: none; }
 
+.scrollTopButton {
+  width: 64px;
+  height: 64px;
+  position: fixed;
+  visibility: hidden;
+  overflow: hidden;
+  z-index: 99999999;
+  background-image: url("../../../image/icons/arrow-top.png");
+  right: 30px;
+  bottom: 30px;
+  transition: all 0.5s ease-in-out; }
+
+.scrollTopButton.show {
+  visibility: visible;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  opacity: .6; }
+
 .mobile-nav {
   overflow: hidden;
   position: relative;
@@ -413,7 +431,7 @@ a {
   font-size: 16px;
   font-family: "Lato", sans-serif; }
 
-span {
+.footer-bottom span {
   font-family: "Lato", sans-serif;
   color: #85868a; }
 
